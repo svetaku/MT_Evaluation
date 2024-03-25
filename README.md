@@ -14,7 +14,7 @@ This repository contains the code and data for evaluating machine translations g
    - The original English texts, their human translations, and machine translations were manually aligned at the sentence level to create a reference dataset for evaluation.
 
 4. **Evaluation**:
-   - The quality of machine translations was assessed using the BLEU (Bilingual Evaluation Understudy) metric, comparing machine translations against human translations.
+   - The quality of machine translations was assessed using the BLEU and COMET metrics, comparing machine translations against human translations.
 
 5. **Analysis**:
-   - Statistical analysis was performed to compare the BLEU scores obtained from different prompts across various fields, aiming to determine the most effective prompt for each field.
+   - Statistical analysis was performed to compare the BLEU and COMET scores obtained from different prompts across various fields, aiming to determine the most effective prompt for each field.
