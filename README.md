@@ -10,11 +10,8 @@ This repository contains the code and data for evaluating machine translations g
 2. **Machine Translation**:
    - GPT-3.5-Turbo was employed for machine translation from English to Russian using two different prompts.
 
-3. **Manual Alignment**:
-   - The original English texts, their human translations, and machine translations were manually aligned at the sentence level to create a reference dataset for evaluation.
-
-4. **Evaluation**:
+3. **Evaluation**:
    - The quality of machine translations was assessed using the BLEU and COMET metrics, comparing machine translations against human translations.
 
-5. **Analysis**:
+4. **Analysis**:
    - Statistical analysis was performed to compare the BLEU and COMET scores obtained from different prompts across various fields, aiming to determine the most effective prompt for each field.
