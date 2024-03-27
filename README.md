@@ -15,3 +15,7 @@ This repository contains the code and data for evaluating machine translations g
 
 4. **Analysis**:
    - Statistical analysis was performed to compare the BLEU and COMET scores obtained from different prompts across various fields, aiming to determine the most effective prompt for each field.
+  
+## Usage
+To use your OpenAI API key, create a `.env` file in the root directory of your project. Insert your key/value pairs in the following format:
+OPENAI_API_KEY="your openai api key"
