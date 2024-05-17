@@ -17,5 +17,27 @@ This repository contains the code and data for evaluating machine translations g
    - Statistical analysis was performed to compare the BLEU and COMET scores obtained from different prompts across various fields, aiming to determine the most effective prompt for each field.
   
 ## Usage
-To use your OpenAI API key, create a `.env` file in the root directory of your project. Insert your key/value pairs in the following format: \
+- Clone the repository
+  ```sh
+  git clone https://github.com/svetaku/MT_Evaluation.git
+  cd MT_Evaluation
+- Install dependencies
+  ```sh
+  pip install -r requirements.txt
+- Prepare the dataset. The project requires a dataset in a JSON file (texts.json). Users can create their own JSON file with their own dataset. Ensure the JSON file follows this structure:
+  ```sh
+  [{
+  "field": "Text genre/field",
+  "title": "Text title",
+  "en-text": "English text here",
+  "ru_human_translation": "Russian reference (human) translation",
+  "en_length": "Word count of the English text"
+      },
+  // Add more entries as needed
+   }]
+
+- To use your OpenAI API key, create a `.env` file in the root directory of your project. Insert your key/value pairs in the following format: \
 `OPENAI_API_KEY="your openai api key"`
+- You can now open and run the Jupyter notebooks to create and evaluate machine translations:
+   - 01_machine_translation_with_openai.ipynb - This notebook is used for creating machine translations for the dataset.
+   - 02_bleu_vs_comet.ipynb - This notebook is used for evaluating the translations using BLEU and COMET scores.
